@@ -182,7 +182,8 @@ resource "aws_instance" "this" {
   lifecycle {
     ignore_changes  = [
       root_block_device,
-      ebs_block_device
+      ebs_block_device,
+      user_data
     ]
     prevent_destroy = true
   }

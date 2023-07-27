@@ -186,7 +186,7 @@ resource "aws_instance" "this" {
       user_data,
       ami
     ]
-    prevent_destroy = true
+    prevent_destroy = false
   }
 
 }

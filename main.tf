@@ -183,7 +183,8 @@ resource "aws_instance" "this" {
     ignore_changes  = [
       root_block_device,
       ebs_block_device,
-      user_data
+      user_data,
+      ami
     ]
     prevent_destroy = true
   }
